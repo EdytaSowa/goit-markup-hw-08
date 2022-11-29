@@ -1,0 +1,38 @@
+.occupation {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+
+  padding-inline: 0;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-inline: 15;
+    padding-bottom: 94px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+    margin: 0;
+    height: 70px;
+    padding-block: 27px;
+  }
+}
