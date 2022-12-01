@@ -2,7 +2,6 @@
   background-color: rgba(245, 244, 250, 1);
   padding-block: 94px;
 
-
   &__list {
     list-style-type: none;
     display: flex;
@@ -45,16 +44,14 @@
 
   &__social-link-list {
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 18px;
     margin-top: 16px;
     list-style: none;
     padding-left: 0;
   }
-
- 
 }
-
 
 // .social-item--team {
 //   // display: flex;
