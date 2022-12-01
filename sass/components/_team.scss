@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
