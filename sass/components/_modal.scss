@@ -1,4 +1,8 @@
 .modal {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,7 +21,7 @@
     background-color: #fff;
     border: 0;
   }
-  
+
   &__x {
     position: absolute;
     top: 0;
@@ -28,14 +32,14 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
   }
-  
+
   &__title {
     margin-top: 40px;
     font-size: 20px;
     text-align: center;
     font-weight: 700;
   }
-  
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -44,12 +48,12 @@
     outline: 0;
     border: 0;
     padding: 0;
-  
+
     &:has(input:focus) .modal__icon {
       fill: $colorchange;
     }
   }
-  
+
   &__label {
     color: $color-description;
     font-size: 12px;
@@ -63,7 +67,7 @@
     padding-left: 42px;
     margin-bottom: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:focus {
       border-color: $colorchange;
       outline: 0;
@@ -75,13 +79,13 @@
     width: 448px;
     height: 138px;
     resize: none;
-  
+
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);
       font-size: 12px;
     }
   }
-  
+
   &__checkbox {
     padding-left: 39px;
     border: 0;
@@ -89,13 +93,13 @@
   }
   &__input-checkbox {
     visibility: hidden;
-  
+
     &:checked + span svg {
       background-color: $colorchange;
       border: 0;
     }
   }
-  
+
   &__icon-checkbox {
     border: 1px solid black;
     fill: white;
@@ -103,7 +107,7 @@
     height: 15px;
     margin-bottom: -1px;
   }
-  
+
   &__label-checkbox {
     color: $color-description;
     font-size: 14px;
@@ -116,7 +120,7 @@
     color: $colorchange;
     text-decoration: underline;
   }
-  
+
   &__icon {
     position: absolute;
     width: 18px;
@@ -126,7 +130,7 @@
     fill: rgba(33, 33, 33, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   &__button-send {
     background-color: $colorchange;
     border: 0;
@@ -137,11 +141,9 @@
     margin-top: 30px;
     cursor: pointer;
   }
-  
+
   &__button-flex {
     display: flex;
     justify-content: center;
   }
-  
 }
-
